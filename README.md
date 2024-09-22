@@ -1,3 +1,4 @@
 Sum.cpp  is a multithreaded program that simulates guessing the correct values for a combination lock using POSIX threads (Pthreads). The combo.txt file was on a different server and was lost, but essentially it held a series of numbers (representing the correct combination for a lock) from a file called combo.txt and stores them in an array named combo.
 
-
+Race.cpp is a multithreaded C++ program that uses Pthreads (POSIX threads) to create a number of threads (provided as a command-line argument) and has each thread print a message. The program also calculates how many threads successfully executed by incrementing a global sum variable. This program is good to understand the concept of multithreading and to expose the potential issue of race conditions in concurrent programming.
+                  - (A race condition occurs when two or more threads try to modify shared data at the same time without proper synchronization. This leads to                                           unpredictable or incorrect behavior, as the outcome depends on the order in which the threads access the shared resource.)
